@@ -5,18 +5,15 @@ It allows multiple users to draw, erase, edit, and collaborate simultaneously wi
 
 ---
 
-## 🚀 Live Demo
-
-🔗 **Frontend (Vercel):** [https://your-frontend-vercel-link.com](#)  
-🔗 **Backend (Render):** [https://your-backend-render-link.com](#)
-
----
-
 ## 🖼️ Project Preview
 
-> *(Add your screenshot here — replace the image link below)*
+<img width="958" height="559" alt="image" src="https://github.com/user-attachments/assets/ed537919-fade-4953-994e-31c338f123e0" />
 
-![Whiteboard Screenshot](./screenshot.png)
+<img width="452" height="307" alt="image" src="https://github.com/user-attachments/assets/ab9f67a8-6aa8-4dad-b212-df67bcdeb9b0" />
+
+<img width="383" height="312" alt="image" src="https://github.com/user-attachments/assets/7e95c5a7-ce28-410d-888d-5c2bcdcfdc35" />
+
+<img width="957" height="546" alt="image" src="https://github.com/user-attachments/assets/0e03148e-b020-4909-b0ae-27d3ebb290b1" />
 
 ---
 
@@ -50,9 +47,6 @@ It allows multiple users to draw, erase, edit, and collaborate simultaneously wi
 - MongoDB (with Mongoose ODM)  
 - JWT Authentication  
 - Socket.IO (rooms + event handling)  
-
-### **Deployment**
-- **Frontend And Backend → Vercel**
 
 ---
 
