@@ -1,0 +1,75 @@
+.container {
+  @apply absolute top-1/2 left-5 text-sm border border-gray-300;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Option Group */
+.selectOptionContainer {
+  @apply mb-6 last:mb-0 first:pt-5 last:pb-5 px-4;
+}
+
+/* Label */
+.toolBoxLabel {
+  @apply block mb-1 text-gray-700 font-medium tracking-wide;
+}
+
+/* Color Section */
+.colorsContainer {
+  @apply flex flex-wrap items-center gap-2;
+}
+
+/* Color Box */
+.colorBox {
+  @apply inline-block w-5 h-5 rounded-sm mr-1 last:mr-0 cursor-pointer;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.colorBox:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+/* No Fill Box */
+.noFillColorBox {
+  background: linear-gradient(
+      to top left,
+      rgba(255, 0, 0, 0) 0%,
+      rgba(255, 0, 0, 0) calc(50% - 0.8px),
+      rgba(255, 0, 0, 1) 50%,
+      rgba(255, 0, 0, 0) calc(50% + 0.8px),
+      rgba(255, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      to top right,
+      rgba(255, 0, 0, 0) 0%,
+      rgba(255, 0, 0, 0) calc(50% - 0.8px),
+      rgba(255, 0, 0, 1) 50%,
+      rgba(255, 0, 0, 0) calc(50% + 0.8px),
+      rgba(255, 0, 0, 0) 100%
+    );
+  border-radius: 2px;
+}
+
+/* Active Color Highlight */
+.activeColorBox {
+  @apply border border-gray-300;
+  box-shadow: 0 0 0 2px #4a7bff;
+  transform: scale(1.2);
+}
+
+/* Color Picker Circle */
+.colorPicker {
+  @apply mr-5 w-10 h-10 rounded border-2 border-neutral-400 cursor-pointer;
+  transition: transform 0.2s ease;
+}
+
+.colorPicker:hover {
+  transform: scale(1.06);
+}

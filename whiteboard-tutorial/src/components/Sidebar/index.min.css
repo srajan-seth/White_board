@@ -1,0 +1,204 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px);
+  box-shadow: -4px 0 18px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.sidebar-title {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Create Button */
+.create-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a7bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.create-button:hover {
+  background-color: #3f6ce0;
+  transform: translateY(-1px);
+}
+
+.create-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Canvas List */
+.canvas-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Individual Canvas Card */
+.canvas-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #ffffff;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.canvas-item:hover {
+  background: #f5f9ff;
+  border-color: #cfe0ff;
+}
+
+/* Selected Canvas */
+.canvas-item.selected {
+  background: #eaf3ff;
+  border: 2px solid #4a7bff;
+  color: #4a7bff;
+  font-weight: 700;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Canvas Name */
+.canvas-name {
+  font-size: 1rem;
+  color: #222;
+}
+
+/* Delete Button */
+.delete-button {
+  background: transparent;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.delete-button:hover {
+  color: #d93636;
+  transform: scale(1.1);
+}
+
+/* Auth Button (Logout) */
+.auth-button {
+  width: 98%;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background-color: #ef4b4b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.auth-button:hover {
+  background-color: #d93a3a;
+  transform: translateY(-1px);
+}
+
+/* Share Container */
+.share-container {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.share-container input {
+  padding: 8px;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  max-width: 220px;
+  transition: border-color 0.25s ease, background 0.2s ease;
+}
+
+.share-container input:focus {
+  border-color: #4a7bff;
+  background: #f8faff;
+}
+
+/* Share Button */
+.share-button {
+  padding: 8px 12px;
+  background: #4a7bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.share-button:hover {
+  background-color: #3f6ce0;
+  transform: translateY(-1px);
+}
+
+.share-button:disabled {
+  background: #d0d0d0;
+  cursor: not-allowed;
+}
+
+/* Messages */
+.error-message,
+.success-message {
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 6px;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: #d43f3a;
+  background-color: #fdecea;
+  border: 1px solid #f5c2c7;
+}
+
+.success-message {
+  color: #2e9e58;
+  background-color: #e7f7ed;
+  border: 1px solid #c4e9cf;
+}
